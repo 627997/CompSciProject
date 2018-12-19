@@ -1,8 +1,4 @@
 
-import java.awt.Color;
-
-
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,8 +14,6 @@ public class QBStatTracker extends javax.swing.JFrame {
     double compPercent = 0;
     int number = 0;
     
-    //int[] yards = new int[501];
-    //int[] yardage = new int[501];
     double[] completions = new double[51];
     double[] attempts = new double[101];
     double totalYards = 0;
@@ -81,47 +75,76 @@ public class QBStatTracker extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Cambria", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Quarterback Stat Tracker");
 
         weekLabel.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        weekLabel.setForeground(new java.awt.Color(0, 0, 255));
         weekLabel.setText(" Week 1");
-        weekLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        weekLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.blue, null));
 
+        jTextField1.setForeground(new java.awt.Color(0, 0, 255));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
+        jTextField2.setForeground(new java.awt.Color(0, 0, 255));
+
+        jTextField3.setForeground(new java.awt.Color(0, 0, 255));
+
+        jTextField4.setForeground(new java.awt.Color(0, 0, 255));
+
+        jTextField5.setForeground(new java.awt.Color(0, 0, 255));
+
+        jTextField6.setForeground(new java.awt.Color(0, 0, 255));
+
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
         jLabel3.setText("(enter stats below)");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setText("Yards");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 255));
         jLabel7.setText("Cmp ");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 255));
         jLabel8.setText("TD ");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 255));
         jLabel9.setText("Int ");
 
+        jTextField7.setForeground(new java.awt.Color(0, 0, 255));
+
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 255));
         jLabel11.setText("KEY:");
 
+        jLabel12.setForeground(new java.awt.Color(0, 0, 255));
         jLabel12.setText("Yards - Passing Yards");
 
+        jLabel15.setForeground(new java.awt.Color(0, 0, 255));
         jLabel15.setText("Cmp - Completions");
 
+        jLabel16.setForeground(new java.awt.Color(0, 0, 255));
         jLabel16.setText("TD - Touchdowns");
 
+        jLabel17.setForeground(new java.awt.Color(0, 0, 255));
         jLabel17.setText("Int - Interceptions");
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 0, 255));
         jLabel19.setText("Season AVG");
-        jLabel19.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, null));
+        jLabel19.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.blue, null));
 
+        jTextField8.setForeground(new java.awt.Color(0, 0, 255));
+
+        jButton1.setForeground(new java.awt.Color(0, 0, 255));
         jButton1.setText("Enter");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +152,7 @@ public class QBStatTracker extends javax.swing.JFrame {
             }
         });
 
+        jTextField9.setForeground(new java.awt.Color(0, 0, 255));
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
@@ -136,22 +160,29 @@ public class QBStatTracker extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("Att ");
 
+        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setText("Att - Attempts");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 255));
         jLabel6.setText("AVG ");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 255));
         jLabel10.setText("Cmp%");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 255));
         jLabel13.setText("AVG ");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 255));
         jLabel14.setText("AVG ");
 
+        jLabel18.setForeground(new java.awt.Color(0, 0, 255));
         jLabel18.setText("AVG - Average");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -332,16 +363,18 @@ public class QBStatTracker extends javax.swing.JFrame {
         newTd += td;
         totalTD = newTd / divideBy;
         jTextField8.setText(String.format("%.2f", totalTD));
-        
+         
         
         int interceptions = Integer.parseInt(jTextField5.getText());
         newInt += interceptions;
         totalInt = newInt / divideBy;
         jTextField9.setText(String.format("%.2f", totalInt));
         
+        
         completions[number] = Integer.parseInt(jTextField2.getText());
         attempts[number] = Integer.parseInt(jTextField3.getText());
         number++;
+        
         
         weekNumber += 1;
         weekLabel.setText(" Week " + weekNumber);
@@ -353,6 +386,7 @@ public class QBStatTracker extends javax.swing.JFrame {
         
         
         calculateCompletions(completions, attempts, compPercent);
+        
         
         jTextField7.setText(String.format("%.2f",compPercent)+"%");
         
@@ -366,7 +400,6 @@ public class QBStatTracker extends javax.swing.JFrame {
     
     
     public double calculateCompletions(double[] completions, double[] attempts, double compPercent) {
-        //Initial setup
         double passComp = 0;
         for (int i = 0; i < number; i++) {
             passComp += completions[i];            
@@ -375,7 +408,6 @@ public class QBStatTracker extends javax.swing.JFrame {
         for (int h = 0; h < number; h++) {
             passAttempt += attempts[h];
         }
-        //Calculate average
         this.compPercent = passComp / passAttempt * 100;
         return compPercent;
     }
